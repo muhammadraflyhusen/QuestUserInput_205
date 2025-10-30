@@ -1,5 +1,7 @@
 package com.example.inputpengguna
 
+import androidx.compose.foundation.layout.Row
+
 @Composable
 fun FormDataDiri(modifier: Modifier) {
 
@@ -36,7 +38,14 @@ fun FormDataDiri(modifier: Modifier) {
                Row(modifier = Modifier.selecttable(
                    selected = textJk == item,
                    onClick = {textJK = item}
-               ))
+               ), verticalAlligment = Alligment.CenterVertically) {
+                   RadioButton(
+                       selected = textJK == items,
+                       onclick = {
+                           textJK = item
+                       })
+                   Text(text=item)
+               }
            }
        }
    }
