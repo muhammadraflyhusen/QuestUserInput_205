@@ -72,6 +72,7 @@ fun FormDataDiri(modifier: Modifier) {
 
        HorizontalDevider(
            modifier = Modifier.padding(
+               bottom = dimensionResource(R.dimen.padding_medium),
        )
    }
 }
