@@ -69,6 +69,10 @@ fun FormDataDiri(modifier: Modifier) {
                textAlamat = it
            }
        )
+
+       HorizontalDevider(
+           modifier = Modifier.padding(
+       )
    }
 }
 
