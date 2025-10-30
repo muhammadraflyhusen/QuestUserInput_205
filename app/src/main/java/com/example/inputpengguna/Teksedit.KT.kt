@@ -12,6 +12,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.dimensionResource
 
 @Composable
 fun FormDataDiri(modifier: Modifier) {
@@ -73,7 +74,13 @@ fun FormDataDiri(modifier: Modifier) {
        HorizontalDevider(
            modifier = Modifier.padding(
                bottom = dimensionResource(R.dimen.padding_medium),
+               top = dimensionResource(
+                   id = R.dimen.padding_medium
+               )),
+           thickness = dimensionResource(id =R.dimen.divider_tipis),
+           color = Color.DarkGray
        )
+
    }
 }
 
